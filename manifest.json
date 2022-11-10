@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Notion-Recolor",
+  "version": "1.0",
+
+  "description": "Changes the background color of all webpages matching notion.so.",
+
+  "icons": {
+    "48": "icons/palette.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.notion.so/*"],
+      "js": ["notionRecolor.js"]
+    }
+  ]
+}
